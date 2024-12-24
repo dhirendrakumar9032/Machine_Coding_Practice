@@ -1,0 +1,25 @@
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #ff5733 0% 30%,
+      #33c1ff 30% 50%,
+      #75ff33 50% 65%,
+      #ff33a6 65% 75%,
+      #ffc300 75% 90%,
+      #a833ff 90% 100%
+    );
+    position: relative;
+  }
+  
+  .slice-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(var(--rotation)) translate(100px) rotate(-90deg);
+    font-size: 12px;
+    color: #e43636;
+  }
+  

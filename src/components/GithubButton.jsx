@@ -1,10 +1,7 @@
 import { Github } from 'lucide-react';
 
-interface GithubButtonProps {
-  url: string;
-}
 
-export default function GithubButton({ url }: GithubButtonProps) {
+export default function GithubButton({ url }) {
   return (
     <a
       href={url}

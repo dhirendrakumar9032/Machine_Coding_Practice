@@ -1,15 +1,9 @@
-export interface Question {
-  id: number;
-  title: string;
-  path: string;
-  githubUrl: string;
-}
 
-export const questions: Question[] = [
+export const questions = [
   {
     id: 1,
-    title: "Build Auto Search Component",
-    path: "/autoSearch",
+    title: "Build Auto Complete Component",
+    path: "/autoComplete",
     githubUrl: ""
   },
   {

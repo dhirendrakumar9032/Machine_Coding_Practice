@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     width: 100%;
-    max-width: 300px; /* Adjust based on your design requirements */
+    max-width: 300px;
 }
 
 .search-input {
@@ -33,6 +33,8 @@
     border-bottom-left-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    max-height: 500px;
+    overflow: scroll;
 }
 
 .option {

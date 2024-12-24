@@ -1,16 +1,28 @@
 import { useEffect, useState } from 'react';
 import QuestionLayout from '../../layouts/QuestionLayout';
-import './index.css'; // Make sure this file path is correct and accessible.
+import './index.css'; 
 
-const searchList = ['Dhirendra Kumar', 'Dharam', 'Kiran', 'Raj Kumar', 'hsk'];
+const products = [
+    "Smartphone", "Laptop", "Sneakers", "Backpack", "Watch",
+    "Sofa", "Coffee Table", "Desk Lamp", "Area Rug", "Wall Art",
+    "Dress", "Suit", "Jeans", "Blouse", "T-shirt",
+    "Cookware Set", "Dinner Plates", "Wine Glasses", "Knife Set", "Blender",
+    "Vacuum Cleaner", "Hair Dryer", "Shampoo", "Body Lotion", "Toothpaste",
+    "Nail Polish", "Lipstick", "Eau de Toilette", "Sunscreen", "Fitness Tracker",
+    "Yoga Mat", "Dumbbells", "Bicycle", "Skateboard", "Camping Tent",
+    "Sleeping Bag", "Novel", "Cookbook", "Board Game", "Jigsaw Puzzle",
+    "Acoustic Guitar", "Piano Keyboard", "Sketchbook", "Watercolor Paint Set", "Digital Camera",
+    "Drone", "LED TV", "Gaming Console", "Bluetooth Speaker", "Wireless Earbuds"
+];
 
-const AutoSearch = () => {
+
+const AutoComplete = () => {
     const [searchItem, setSearchItem] = useState('');
-    const [options, setOptions] = useState<string[]>([]);
+    const [options, setOptions] = useState([]);
     const [selected,setSelected]=useState(false)
 
     useEffect(() => {
-        const filteredOptions = searchList.filter(item =>
+        const filteredOptions = products.filter(item =>
             item.toLowerCase().includes(searchItem.toLowerCase())
         );
         if (searchItem&&!selected) {
@@ -21,14 +33,14 @@ const AutoSearch = () => {
         }
     }, [searchItem]);
 
-    const handleSelect = (value: string) => {
+    const handleSelect = (value) => {
         setSearchItem(value);
         setOptions([]);
         setSelected(true)
     };
 
     return (
-        <QuestionLayout title="Auto Search">
+        <QuestionLayout title="Auto Complete">
             <div className='search-container'>
                 <input
                     type="text"
@@ -55,4 +67,4 @@ const AutoSearch = () => {
     );
 };
 
-export { AutoSearch };
+export { AutoComplete };
