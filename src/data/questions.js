@@ -14,20 +14,15 @@ export const questions = [
   },
   {
     id: 3,
-    title: "Implement Infinite Scroll",
-    path: "/infinite-scroll",
-    githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
-  },
-  {
-    id: 4,
     title: "Count Down Timer",
     path: "/countDowntimer",
     githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
   },
   {
-    id: 5,
-    title: "Create a Pagination Component",
-    path: "/pagination",
+    id: 4,
+    title: "Multi Select Search",
+    path: "/multiSelectSearch",
     githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
   }
+  
 ];

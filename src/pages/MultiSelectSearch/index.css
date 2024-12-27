@@ -1,0 +1,64 @@
+.multiSearch {
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #d7d7d7;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    align-items: center;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    gap: 4px;
+}
+
+.option .deselect {
+    cursor: pointer;
+    color: #666;
+    padding-left: 8px;
+}
+
+input {
+    padding: 4px;
+    flex-grow: 1;
+    border-radius: 4px;
+    outline: none;
+    text-align: start;
+
+}
+
+input:focus {
+    border-color: #1050ff;
+}
+
+.list {
+    margin-top: 4px;
+    border: 1px solid #d7d7d7;
+    padding-top: 4px;
+    border-radius: 4px;
+    max-height: 500px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.list > div {
+    padding: 2px 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.list > div:hover {
+    background-color: #f9e7e7;
+    border-radius: 4px;
+}
