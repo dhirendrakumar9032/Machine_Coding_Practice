@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage/HomePage';
 import TabsQuestion from './pages/TabsQuestion';
 import { AutoComplete } from './pages/AutoComplete';
 import {PieChart} from './pages/PieChart'
+import {CountDownTimer} from './pages/CountDownTimer'
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
           <Route path="/tabs" element={<TabsQuestion />} />
           <Route path="/autoComplete" element={<AutoComplete />} />
           <Route path="/pieChart" element={<PieChart />} />
-
+          <Route path="/countDownTimer" element={<CountDownTimer />} />
         </Routes>
       </div>
     </Router>

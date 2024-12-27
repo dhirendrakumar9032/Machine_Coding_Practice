@@ -1,0 +1,30 @@
+.countDownTimer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.inputs{
+    display: flex;
+    gap: 8px;
+}
+
+ input{
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.footer{
+    display: flex;
+    gap: 8px;
+}
+
+.footer button{
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 4px;
+}

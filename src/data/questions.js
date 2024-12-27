@@ -20,8 +20,8 @@ export const questions = [
   },
   {
     id: 4,
-    title: "Build a Star Rating Component",
-    path: "/star-rating",
+    title: "Count Down Timer",
+    path: "/countDowntimer",
     githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
   },
   {
