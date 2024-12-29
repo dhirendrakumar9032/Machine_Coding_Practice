@@ -6,6 +6,7 @@ import {PieChart} from './pages/PieChart'
 import {CountDownTimer} from './pages/CountDownTimer'
 import {MultiSelectSearch} from './pages/MultiSelectSearch'
 import {ProgressBar} from './pages/ProgressBar'
+import {TrafficLight} from './pages/TrafficLight'
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="/countDownTimer" element={<CountDownTimer />} />
           <Route path="/multiSelectSearch" element={<MultiSelectSearch />} />
           <Route path="/progressBar" element={<ProgressBar />} />
-
+          <Route path="/TrafficLight" element={<TrafficLight />} />
         </Routes>
       </div>
     </Router>

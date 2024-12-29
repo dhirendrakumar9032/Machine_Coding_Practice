@@ -1,0 +1,59 @@
+.trafficLightContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  .signals {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 4px;
+  }
+  
+  .signal {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 4px;
+    color: black;
+  }
+  
+  .red {
+    color: white;
+    background-color: red;
+  }
+  
+  .green {
+    color: white;
+    background-color: green;
+  }
+  
+  .yellow {
+    color: white;
+    background-color: #ffc145;
+  }
+  
+  .buttons button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .select {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
