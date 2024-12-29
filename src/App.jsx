@@ -5,6 +5,8 @@ import { AutoComplete } from './pages/AutoComplete';
 import {PieChart} from './pages/PieChart'
 import {CountDownTimer} from './pages/CountDownTimer'
 import {MultiSelectSearch} from './pages/MultiSelectSearch'
+import {ProgressBar} from './pages/ProgressBar'
+
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/pieChart" element={<PieChart />} />
           <Route path="/countDownTimer" element={<CountDownTimer />} />
           <Route path="/multiSelectSearch" element={<MultiSelectSearch />} />
+          <Route path="/progressBar" element={<ProgressBar />} />
+
         </Routes>
       </div>
     </Router>

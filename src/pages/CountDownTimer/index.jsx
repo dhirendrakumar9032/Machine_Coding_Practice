@@ -66,11 +66,13 @@ const CountDownTimer = () => {
                         value={formatTime(Math.floor(timer / 3600))}
                         onChange={(e) => handleChange('hour', e.target.value)}
                     />
+                    :
                     <input
                         type="number"
                         value={formatTime(Math.floor((timer % 3600) / 60))}
                         onChange={(e) => handleChange('minutes', e.target.value)}
                     />
+                    :
                     <input
                         type="number"
                         value={formatTime(timer % 60)}

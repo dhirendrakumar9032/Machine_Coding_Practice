@@ -23,6 +23,12 @@ export const questions = [
     title: "Multi Select Search",
     path: "/multiSelectSearch",
     githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
+  },
+  {
+    id: 4,
+    title: "Progress Bar",
+    path: "/progressBar",
+    githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
   }
   
 ];
