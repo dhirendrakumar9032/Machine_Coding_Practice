@@ -51,9 +51,9 @@ const AutoComplete = () => {
                 />
                 {options.length > 0 && (
                     <div className='options-container'>
-                        {options.map(item => (
+                        {options.map((item,index) => (
                             <div
-                                key={item}
+                                key={item+index}
                                 onClick={() => handleSelect(item)}
                                 className="option"
                             >

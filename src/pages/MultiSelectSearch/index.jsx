@@ -57,7 +57,7 @@ const MultiSelectSearch = () => {
                 <div className="options">
                     {options.map((option, index) => {
                         return (
-                            <span className='option' key={`${index}${option}`} >
+                            <span className='option' key={`${index}${option+Math.random*10}`} >
                                 {option}
                                 <span onClick={() => handleDeSelect(option)}><X /></span></span>)
                     })}
@@ -67,7 +67,7 @@ const MultiSelectSearch = () => {
             {(focus && query) && (<div className="list">
                 {list.map((item, index) => {
                     return (
-                        <div className='listItem' key={`${index + item}`} onClick={() => handleSelect(index)}>{item}</div>
+                        <div className='listItem' key={`${index + item+Math.random()*10}`} onClick={() => handleSelect(index)}>{item}</div>
                     )
                 })}
             </div>)}

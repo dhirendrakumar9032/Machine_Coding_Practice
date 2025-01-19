@@ -8,7 +8,7 @@ export default function HomePage() {
       <div className="mx-auto">
         {questions.map((question, index) => (
           <QuestionCard
-            key={question.id}
+            key={`${question.id}${index}`}
             question={question}
             isAlternate={index % 2 === 0}
           />

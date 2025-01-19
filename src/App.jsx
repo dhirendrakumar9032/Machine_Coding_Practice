@@ -1,13 +1,13 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import HomePage from './pages/HomePage/HomePage';
-import { AutoComplete } from './pages/AutoComplete';
-import {PieChart} from './pages/PieChart'
-import {CountDownTimer} from './pages/CountDownTimer'
-import {MultiSelectSearch} from './pages/MultiSelectSearch'
-import {ProgressBar} from './pages/ProgressBar'
-import {TrafficLight} from './pages/TrafficLight'
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage/HomePage";
+import { AutoComplete } from "./pages/AutoComplete";
+import { PieChart } from "./pages/PieChart";
+import { CountDownTimer } from "./pages/CountDownTimer";
+import { MultiSelectSearch } from "./pages/MultiSelectSearch";
+import { ProgressBar } from "./pages/ProgressBar";
+import { TrafficLight } from "./pages/TrafficLight";
+import { BookStore } from "./pages/BookStore";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
           <Route path="/multiSelectSearch" element={<MultiSelectSearch />} />
           <Route path="/progressBar" element={<ProgressBar />} />
           <Route path="/TrafficLight" element={<TrafficLight />} />
+          <Route path="/BookStore" element={<BookStore />} />
         </Routes>
       </div>
     </Router>

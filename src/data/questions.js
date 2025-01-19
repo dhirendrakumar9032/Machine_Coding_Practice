@@ -35,7 +35,12 @@ export const questions = [
     title: "Traffic Light",
     path: "/TrafficLight",
     githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
+  },
+  {
+    id: 4,
+    title: "Book Store",
+    path: "/BookStore",
+    githubUrl: "https://github.com/dhirendrakumar9032/Machine_Coding_Practice"
   }
-  
 ];
 
